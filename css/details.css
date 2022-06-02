@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
+
+.container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    line-height: 1.5;
+    background: url(../photo/background-detailes.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.match {
+    background: url(../photo/background-cover.jpg);
+    display: flex;
+    flex-direction: column;
+    min-width: 300px; 
+    border-radius: 10px;
+    box-shadow: 0 0 2px 0 rgba(48 48 48/ 10%), 0 4px 4px 0 rgba(48 48 48/ 10%);
+
+}
+
+.match-header {
+    display: flex;
+    padding: 10px 10px;
+    border-bottom: 2px solid rgba(48 48 48/ 10%);
+}
+
+.match-status {
+    background-color: #fff;
+    color: #d72641;
+    padding: 14px 2px;
+    border-radius: 16px;
+    font-weight: 600;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: auto;
+    width: 70px;
+    height: 30px;
+}
+
+.match-content {
+    display: flex;
+    position: relative;
+}
+
+.column {
+    padding: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% / 3);
+}
+
+.team-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.team-logo img {
+    width: 80px;
+    height: 78px;
+    margin-bottom: 50px;  
+}
+
+.team-name {
+    text-align: center;
+    font-size: 12px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.match-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.match-date {
+    font-size: 14px;
+    color: #fff;
+}
+
+.match-score {
+    margin: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.match-score-number {
+    color: #ee5;
+    font-size: 25px;
+    font-weight: 700;
+    /* padding: 8px; */
+
+}
+
+.match-score-divider {
+    font-size: 25px;
+    font-weight: 700;
+    color: #fff;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.match-bet-options {
+    display: flex;
+    /* padding-bottom: 5px; */
+}
+.radio {
+    display: flex;
+    margin-top: 20px;
+    font-weight: 700;
+}
+
+.match-bet-place {
+    position: absolute;
+    bottom: -16px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: none;
+    background-color: #623ce6;
+    border-radius: 6px;
+    padding: 10px 48px;
+    color: rgba(255 255 255/ 0.9);
+    font-size: 16px;
+    font-weight: 700;
+    box-shadow: 0 4px 8px 0 rgba(48 48 48/ 0.25);
+    cursor: pointer;
+}
+
+
+*,
+*:after,
+*:before {
+	box-sizing: border-box;
+}

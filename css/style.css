@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
+
+body {
+    background: url(../photo/background-cover.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: "Inter", sans-serif;
+}
+
+.container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.match {
+    background: url(../photo/background-cover.jpg);
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+    min-height: 550px;
+    border-radius: 10px;
+}
+
+.match-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.match-header .match-logo img {
+    width: 200px;
+}
+
+.match-content {
+    display: flex;
+}
+
+.column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% / 3);
+    padding: 10px;
+}
+
+.team-logo img {
+    width: 75px;
+}
+
+.team-name {
+    color: #fff;
+    text-align: center;
+    margin-top: -5px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.match-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.match-status {
+    background-color: #fff;
+    padding: 2px 8px;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 12px;
+}
+.match-score {
+    display: flex;
+    align-items: center;
+}
+
+.match-score-number {
+    color: #ee5;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 2;
+}
+
+.match-score-divider {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0 10px;
+}
+
+.match-vs {
+    color: #ee5;
+    font-size: 12px;
+    font-weight: 400;
+    padding: 6px;
+
+}
+
+.match-ball-anim{
+    position: relative;
+    display: flex;
+
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+}
+@-moz-keyframes spin { 
+    100% { -moz-transform: rotate(360deg); } 
+}
+@-webkit-keyframes spin { 
+    100% { -webkit-transform: rotate(360deg); } 
+}
+@keyframes spin { 
+    100% { 
+        -webkit-transform: rotate(360deg); 
+        transform:rotate(360deg); 
+    } 
+}
+.match-ball-anim img {
+       width: 60px;
+   }

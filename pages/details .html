@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> SportBetting </title>
+    <link rel="stylesheet" href="../css/details.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  </head>
+  <body>
+    <div class="container">
+      <div class="match">
+        <div class="match-header">
+          <div id="matchCurent" class="match-status"> Live </div>
+        </div>
+        <div class="match-content">
+          <div class="column">
+            <div class="team-home">
+              <h2 class="team-name" id="teamAName"> Portugal </h2>
+              <div class="team-logo">
+                <img id="teamAImage" src="../photo/Portugal.png" />
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="match-details">
+              <div id="matchDate" class="match-date"></div>
+              <div id="matchScore" class="match-score">
+                <span id="teamAScore" class="match-score-number"> 3 </span>
+                <span class="match-score-divider">:</span>
+                <span id="teamBScore" class="match-score-number"> 1 </span>
+              </div>
+              <div class="match-bet-options">
+                <div class="radio">
+                  <input type="radio" name="r1" value="" onclick="delDisableSub(this)" /> Home
+                  <input type="radio" name="r1" value="" onclick="delDisableSub(this)" /> Draw
+                  <input type="radio" name="r1" value="" onclick="delDisableSub(this)" /> Away
+                  <input class="match-bet-place" type="button" 
+                  onclick="submitBet()" id="submitBet" value="Place a bet"  disabled />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="team-away">
+              <h2 class="team-name" id="teamBName"> USA </h2>
+              <div class="team-logo">
+                <img id="teamBImage" src="../photo/USA.png" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../js/details.js"></script>
+  </body>
+</html>
